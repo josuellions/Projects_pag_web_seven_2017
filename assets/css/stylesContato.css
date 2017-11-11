@@ -1,0 +1,183 @@
+/**/
+body {
+		background-color: #f6f7f8;
+	}
+
+@media (min-width: 1024px)  {
+
+	ol {
+		padding: .7% !important;
+		height: 50px;
+		/*margin-top: -4.5% !important;*/
+		z-index: 2;
+	}	
+		
+	h1 {
+		margin-top: -1.1% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		/*float: left;*/
+		text-align: center;
+		color: white !important;
+		/*width: 100%;*/
+		/*opacity: 100% !important;*/
+		/*z-index: 1;*/
+	}
+
+	form {
+		/*padding: 0 !important;*/
+		
+		padding-top: 1% !important;
+		padding-bottom: 1% !important;
+		margin-top: 2% !important;
+		margin-right: 0% !important;
+		border-style: ridge;
+		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+		/*border-radius: 4px 4px 4px 4px solid gray;*/
+		/*width: 65% !important;*/
+		margin-left: 2.5%;
+
+	}
+
+	button {
+		margin-top: 2.5% !important;
+		/*margin-left:5% !important; */
+		/*width: 90% !important;*/
+		margin-bottom: 2.5% !important;
+	}
+
+	textarea {
+		padding: 2%;
+		height: 120px;
+		max-height: 120px !important;
+	}
+
+	.btnCadastro {
+		background-color: gray !important;
+		opacity: .90 !important;
+		height: 40px;
+	}
+
+	.alingContato {
+		margin-top: 2%;
+	}
+
+	.alignMaps {
+		width: 105%;
+		height: 500px;
+		/*opacity: .40;*/
+		margin-left: 0%;
+		margin-top: 0%;
+		/*background-image: url(../img/mapsSantoAndre.jpeg);*/
+		background-size: 975px 490px;
+		/*background-position: 2px 5px 2px 2px;*/
+		background-repeat: no-repeat;
+		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+	}
+
+	.footer_div {
+		margin-top: 2% !important;
+		position: fixed;
+	}
+
+}
+
+@media only screen and (max-width: 500px)  {
+
+	ol {
+		padding: 2% !important;
+		height: 30px;
+		/*margin-top: -4.5% !important;*/
+		z-index: 0;
+	}	
+
+	ol li a {
+		color: #337ab7 !important;	
+	}
+		
+	h1 {
+		margin-top: -5.5% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		font-size: 2rem !important;
+		text-align: center;
+		color: white !important;
+		padding: 1.5%;
+		/*width: 100%;*/
+		opacity: .8 !important;
+		/*z-index: 0;*/
+	}
+
+	form {
+		padding: 0 !important;
+		
+		padding-top: 1% !important;
+		padding-bottom: 1% !important;
+		margin-top: .5% !important;
+		margin-right: -2% !important;
+		border-style: ridge;
+		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+		/*border-radius: 4px 4px 4px 4px solid gray;*/
+		width: 95% !important;
+		margin-left: 2.5%;
+
+	}
+
+	label {
+		/*margin-top: -10% !important;*/
+		padding: 0% !important;
+		font-size: 1rem !important;
+	}
+
+	input {
+		font-size: 1rem !important;
+		margin-bottom: -5% !important;
+
+	}
+
+	button {
+		margin-top: 1.5% !important;
+		margin-left:5% !important; 
+		width: 90% !important;
+		margin-bottom: 2% !important;
+	}
+
+		textarea {
+		padding: 2%;
+		height: 120px;
+		font-size: 1rem !important;
+		max-height: 120px !important;
+	}
+
+	.btnCadastro {
+		background-color: gray !important;
+		opacity: .90 !important;
+		height: 40px;
+	}
+
+	.alingContato {
+		padding: 0 !important;
+		padding-right: -15% !important;
+		margin-top: 5%;
+		font-size: .9rem;
+	}
+
+	.alignMaps {
+		width: 105%;
+		height: 250px;
+		/*opacity: .40;*/
+		margin-left: -2%;
+		margin-top: 0%;
+		/*background-image: url(../img/mapsSantoAndre.jpeg);*/
+		/*background-size: 600px 100px;*/
+		/*background-position: 2px 5px 2px 2px;*/
+		background-repeat: no-repeat;
+		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+	}
+
+	.footer_div {
+		margin-top: 3% !important;
+		position: fixed;
+	}
+
+}

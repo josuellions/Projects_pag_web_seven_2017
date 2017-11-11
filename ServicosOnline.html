@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesServicoOnline.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.css">
+
+	<!-- ON-LINE ACESSO VIA WEB -->
+	  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- FIM -->
+	
+	<title>Seven - Serviços online</title>
+</head>
+<body>
+		<!-- Barra de Menu - Logotipo e Link -->
+		<div class="bg-01 col-lg-12 col-xs-12">
+			<img src="assets/img/logo_seven.jpg" class="logoSeven" id="logoSeven">
+		
+			<!-- MENU PARA DESKTOP WEB -->
+			<!-- Barra de Menu - Logotipo e Link -->
+			<nav class="menu_Desk">
+				<ul>
+					<li><a id="pagHome">Home</a></li>
+
+					<li><a id="pagSobre">Sobre</a>
+						<ul>
+							<li><a id="pagNossoVal" >Nossos Valores</a></li>
+							<li><a id="pagLinhaTemp">Linha do Tempo</a></li>
+						</ul>
+					</li>
+					<li><a id="pagService">Serviços</a>
+						<ul>
+							<li><a id="pagServceOn" >Serviços Online</a></li>
+						</ul>
+					</li>
+					<li><a id="pagCadastro">Cadastro</a></li>
+					<li><a id="pagContato">Contato</a></li>
+				</ul>
+			</nav>
+
+<!-- MENU PARA DIPOSITIVOS MOBILE -->
+			<nav class="dropdown menu_Mobile" id="menu_Desk">
+				  <button class="btn btn-default dropdown-toggle Menu_01" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+				  	<span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+				  </button>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3 dropdownMenuDivider" id="liMenu">
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-home">
+							<a id="pagHomeMob"></span>Home</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-info-sign">
+							<a id="pagSobreMob"></span>Sobre</a>
+						</div>
+						
+						<ul id="liMenu">
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+									<span class="glyphicon glyphicon-usd">
+									<a id="pagNossoValMob" ></span>Nossos Valores</a>
+								</div>
+							</li>
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-time">
+								<a id="pagLinhaTempMob"></span>Linha do Tempo</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-briefcase">
+							<a id="pagServiceMob"></span>Serviços</a>
+							</div>
+						<ul id="liMenu">
+						<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-globe">
+								<a id="pagServceOnMob" ></span>Serviços Online</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-user">
+							<a id="pagCadastroMob"></span>Cadastro</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-earphone">
+							<a id="pagContatoMob"></span>Contato</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-log-out">
+							<a id="pagSairMob"></span>Sair</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- MENSAGEN DE ALERTAS -->
+		<div data-role="main" class="ui-content">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Alerta</h4>
+            </div>
+            <div class="modal-body">
+              <p id="avisos"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- FIM -->
+		<!-- <div > -->
+			<ol class="breadcrumb col-lg-12 col-xs-12">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="NossosServicos.html">Serviços</a></li>
+				<li class="active">Serviços Online</li>
+			</ol>
+		<!-- </div> -->
+
+		<!-- Banner Slider Destaque (Full banner) -->
+		<!-- <div> -->
+			<h1 class="col-lg-12 col-xs-12">Serviços Online</h1>
+			
+
+			<div class="col-lg-12 col-xs-12">
+			<!-- 	<head>
+					<title>Tabela Clientes</title>
+				</head> -->
+				<table class="col-xs-12 col-lg-6 col-lg-offset-3 table-striped">
+					<thead>
+						<tr>
+							<th colspan="2" style="text-align: center;">#ID</th>
+							<th colspan="2" style="text-align: center;">Nome</th>
+							<th colspan="2" style="text-align: center;">Tipo</th>
+							<th colspan="2" style="text-align: center;">Valor</th>
+							<th colspan="4" style="text-align: center;">Boleto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2">001</td>
+							<td colspan="2" class="tdName">Josuel Alves</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 5.200,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">002</td>
+							<td colspan="2" class="tdName">Akemi Suzukawa</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 2.200,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">003</td>
+							<td colspan="2" class="tdName">Rita Bernardino</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 1.600,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">004</td>
+							<td colspan="2" class="tdName">Lucas Lopes</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 1.500,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">005</td>
+							<td colspan="2" class="tdName">Gilmar Silva</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 1.300,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">006</td>
+							<td colspan="2" class="tdName">Clayton Silva</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 1.100,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+						<tr>
+							<td colspan="2">007</td>
+							<td colspan="2" class="tdName">Jessica Silva</td>
+							<td colspan="2">Tipo 1</td>
+							<td colspan="2">R$ 1.000,00</td>
+							<td colspan="4">Emitir Boleto</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						
+					</tfoot>
+				</table>
+				
+			</div>
+
+		<!-- Rodapé (Links e Copyrigth) -->
+		<footer class="page-role col-lg-12 col-xs-12">
+			<div>
+				<img class="iconRedeSocial iconRedeSocial-face" id="btnIconeFace">
+				<img class="iconRedeSocial iconRedeSocial-google" id="btnIconeGoogle">
+				<img class="iconRedeSocial iconRedeSocial-twitter" id="btnIconeTwitter">
+				<p>&copy Copytight - 2017</p>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="scripts/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/js/index.js"></script>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.min.css">
+
+	<!-- ON-LINE ACESSO VIA WEB -->
+	  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- FIM -->
+
+	<title>Seven - Home</title>
+</head>
+<body>
+	<div>
+		<!-- Barra de Menu - Logotipo e Link -->
+		<div class="bg-01 col-lg-12 col-xs-12">
+			<img class="logoSeven" id="logoSeven">
+
+			<!-- MENU PARA DESKTOP WEB -->
+			<!-- Barra de Menu - Logotipo e Link -->
+			<nav class="menu_Desk">
+				<ul>
+					<li><a id="pagHome">Home</a></li>
+
+					<li><a id="pagSobre">Sobre</a>
+						<ul>
+							<li><a id="pagNossoVal" >Nossos Valores</a></li>
+							<li><a id="pagLinhaTemp">Linha do Tempo</a></li>
+						</ul>
+					</li>
+					<li><a id="pagService">Serviços</a>
+						<ul>
+							<li><a id="pagServceOn" >Serviços Online</a></li>
+						</ul>
+					</li>
+					<li><a id="pagCadastro">Cadastro</a></li>
+					<li><a id="pagContato">Contato</a></li>
+				</ul>
+			</nav>
+
+<!-- MENU PARA DIPOSITIVOS MOBILE -->
+			<nav class="dropdown menu_Mobile" id="menu_Desk" >
+				  <button class="btn btn-default dropdown-toggle Menu_01" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+				  	<span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+				  </button>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3 dropdownMenuDivider" id="liMenu">
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-home">
+							<a id="pagHomeMob"></span>Home</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-info-sign">
+							<a id="pagSobreMob"></span>Sobre</a>
+						</div>
+						
+						<ul id="liMenu">
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+									<span class="glyphicon glyphicon-usd">
+									<a id="pagNossoValMob" ></span>Nossos Valores</a>
+								</div>
+							</li>
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-time">
+								<a id="pagLinhaTempMob"></span>Linha do Tempo</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-briefcase">
+							<a id="pagServiceMob"></span>Serviços</a>
+							</div>
+						<ul id="liMenu">
+						<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-globe">
+								<a id="pagServceOnMob" ></span>Serviços Online</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-user">
+							<a id="pagCadastroMob"></span>Cadastro</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-earphone">
+							<a id="pagContatoMob"></span>Contato</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-log-out">
+							<a id="pagSairMob"></span>Sair</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- MENSAGEN DE ALERTAS -->
+		<div data-role="main" class="ui-content">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Alerta</h4>
+            </div>
+            <div class="modal-body">
+              <p id="avisos"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- FIM -->
+
+		<!-- Banner Slider Destaque (Full banner) -->
+		<!-- <div> -->
+			<img class="banner-01" id="imgBannerHome-01 col-lg-12 col-xs-12">
+			<h1 class="tituloBanner col-lg-6 col-xs-10 col-lg-offset-2 col-xs-offset-1" >Programação e Desenvolvimento</h1>
+			<p class="textBanner col-lg-8 col-xs-10 col-lg-offset-2 col-xs-offset-1"> Construindo, desenvolvendo e programando aplicações e soluções para atender a necessidades de cada ambiente, com a melhor tecnologia, responsabilidade em cada projeto desde o planejamento, implementação, testes e suporte. </p>
+		<!-- </div> -->
+
+		<!-- Vantagens (Título, Subtítulo, Tópicos e Botões) -->
+		<div class="campoVantagens col-lg-12 col-xs-12" >
+			<h2 class="tituloVantagem col-lg-12 col-xs-12" >Vantagens</h2>
+			<p class="textVantagem col-lg-12 col-xs-12" >Encontre as vantegens de uma plataforma moderna com perfil para gerenciar a logistica de seus projetos e negócios</p>
+			<div class="alingIconeVant col-lg-12 col-xs-12">
+				<span class="glyphicon glyphicon-briefcase alingIconeVant-iconeCompra col-lg-3 col-xs-3" id="pagCompras"></span>
+				<span class="glyphicon glyphicon-globe alingIconeVant-iconeGlobe col-lg-3 col-xs-3"></span>
+				<span class="glyphicon glyphicon-phone alingIconeVant-iconePhone col-lg-3 col-xs-3"></span>
+				<span class="glyphicon glyphicon-flash alingIconeVant-iconeFlash col-lg-3 col-xs-3"></span>
+				<div class="textVantAling col-lg-12 col-xs-12">
+					<p class="textLoja textLoja-textLoja col-lg-3 col-xs-3">Para Sua Loja</p>
+					<p class="textLoja textLoja-textGlobe col-lg-3 col-xs-3">Quaquer Destino</p>
+					<p class="textLoja textLoja-textPhone col-lg-3 col-xs-3">Na Palma da Mão</p>
+					<p class="textLoja textLoja-textFlash col-lg-3 col-xs-3">Rápido e Simples </p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Funcionalidades (Título, Subtítulo e Tópicos) -->
+		<div class="campoFuncionalidades col-lg-12 col-xs-12" >
+			<h2 class="tituloFuncionalidades col-lg-12 col-xs-12">Funcionalidades</h2>
+			<p class="textFuncionalidades col-lg-12 col-xs-12">As funcionalidades de uma plataforma moderna para gerenciar a logistaca de seus projetos e negócios</p>
+			<div class="alingIconeFunc col-lg-12 col-xs-12">
+				<span class="glyphicon glyphicon-question-sign alingIconeVant-iconeQuestion  col-lg-4 col-xs-4"></span>	
+				<span class="glyphicon glyphicon-usd alingIconeVant-iconeUser col-lg-4 col-xs-4"></span>
+				<span class="glyphicon glyphicon-calendar alingIconeVant-iconeCalendar col-lg-4 col-xs-4"></span>	
+				<div class="textFuncAling col-lg-12 col-xs-12">
+					<p class="textVantQuestion textVantQuestion-textQuestion col-lg-4 col-xs-4">Duvidas</p>
+					<p class="textVantQuestion textVantQuestion-textUser col-lg-4 col-xs-4">Valores</p>
+					<p class="textVantQuestion textVantQuestion-textCalendar col-lg-4 col-xs-4">Agendamento</p>
+				</div>
+			</div>
+		</div>
+		<!-- Cadastro (Título, Subtitulo e Botões) -->
+		<div class="campoCadastro col-lg-12 col-xs-12" >
+			<h4 class="tituloCadastro col-lg-7 col-xs-12 col-lg-offset-1 col-xs-offset-0">VOCÊ CUIDA DA SUA EMPRESA E NÓS CUIDAMOS DAS SOLUÇÕES, PROGRAMAÇÃO E DESENVOLVIMENTO.</h4>
+			<p class="textCadastro col-lg-6 col-xs-8 col-lg-offset-1 col-xs-offset-0">Desenvolvendo, programando e gerenciando para melhor atender</p>
+			<button class="btn btn-default btnCadastro col-lg-1 col-xs-4 col-lg-offset-10 col-xs-offset-8" id="btnCadastro" >Cadastro</button>
+		</div>
+
+		<!-- Rodapé (Links e Copyrigth) -->
+		<footer class="page-role col-lg-12 col-xs-12 footer_div">
+			<div>
+				<img class="iconRedeSocial iconRedeSocial-face" id="btnIconeFace">
+				<img class="iconRedeSocial iconRedeSocial-google" id="btnIconeGoogle">
+				<img class="iconRedeSocial iconRedeSocial-twitter" id="btnIconeTwitter">
+				<p>&copy Copytight - 2017</p>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="scripts/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/js/index.js"></script>
+
+</html>

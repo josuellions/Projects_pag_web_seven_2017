@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesCadastro.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/css/bootstrap.css">
+
+	<!-- ON-LINE ACESSO VIA WEB -->
+	  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<!-- FIM -->
+	
+	<title>Seven - Cadastro</title>
+</head>
+<body onload="onInit()">
+		<!-- Barra de Menu - Logotipo e Link -->
+		<div class="bg-01 col-lg-12 col-xs-12">
+			<img src="assets/img/logo_seven.jpg" class="logoSeven" id="logoSeven">
+		
+			<!-- MENU PARA DESKTOP WEB -->
+			<!-- Barra de Menu - Logotipo e Link -->
+			<nav class="menu_Desk">
+				<ul>
+					<li><a id="pagHome">Home</a></li>
+
+					<li><a id="pagSobre">Sobre</a>
+						<ul>
+							<li><a id="pagNossoVal" >Nossos Valores</a></li>
+							<li><a id="pagLinhaTemp">Linha do Tempo</a></li>
+						</ul>
+					</li>
+					<li><a id="pagService">Serviços</a>
+						<ul>
+							<li><a id="pagServceOn" >Serviços Online</a></li>
+						</ul>
+					</li>
+					<li><a id="pagCadastro">Cadastro</a></li>
+					<li><a id="pagContato">Contato</a></li>
+				</ul>
+			</nav>
+
+<!-- MENU PARA DIPOSITIVOS MOBILE -->
+			<nav class="dropdown menu_Mobile" id="menu_Desk">
+				  <button class="btn btn-default dropdown-toggle Menu_01" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+				  	<span class="glyphicon glyphicon-align-right" aria-hidden="true"></span>
+				  </button>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3 dropdownMenuDivider" id="liMenu">
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-home">
+							<a id="pagHomeMob"></span>Home</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-info-sign">
+							<a id="pagSobreMob"></span>Sobre</a>
+						</div>
+						
+						<ul id="liMenu">
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+									<span class="glyphicon glyphicon-usd">
+									<a id="pagNossoValMob" ></span>Nossos Valores</a>
+								</div>
+							</li>
+							<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-time">
+								<a id="pagLinhaTempMob"></span>Linha do Tempo</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-briefcase">
+							<a id="pagServiceMob"></span>Serviços</a>
+							</div>
+						<ul id="liMenu">
+						<li role="separator" class="divider" id="liMenu"></li>
+							<li id="liMenu">
+								<div class="group-inline" >
+								<span class="glyphicon glyphicon-globe">
+								<a id="pagServceOnMob" ></span>Serviços Online</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-user">
+							<a id="pagCadastroMob"></span>Cadastro</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-earphone">
+							<a id="pagContatoMob"></span>Contato</a>
+						</div>
+					</li>
+					<li role="separator" class="divider" id="liMenu"></li>
+					<li class="dropdown-header" id="liMenu">
+						<div class="group-inline" >
+							<span class="glyphicon glyphicon-log-out">
+							<a id="pagSairMob"></span>Sair</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- MENSAGEN DE ALERTAS -->
+		<div data-role="main" class="ui-content">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Alerta</h4>
+            </div>
+            <div class="modal-body">
+              <p id="avisos"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- FIM -->
+		<!-- <div > -->
+			<ol class="breadcrumb col-lg-12 col-xs-12">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="active">Cadastro</li>
+			</ol>
+		<!-- </div> -->
+
+		<!-- Banner Slider Destaque (Full banner) -->
+		<!-- <div> -->
+			<h1 class="col-lg-12 col-xs-12">Cadastre-Se</h1>
+			
+
+			<form class="col-lg-8 col-xs-12 col-lg-offset-2" name="itemForm">
+					<div class="form-group col-xs-7 col-lg-7">
+						<label for="aria-expanded col-xs-12  col-lg-12";>Nome</label>
+						<input class="form-control col-xs-12 col-lg-12" type="text" name="nomeCliente" id="nomeCliente" name="nome" placeholder="Nome Completo" value="Josuel">
+					</div>
+					<div class="form-group col-xs-5 col-lg-5">
+						<label for="aria-expanded" >CPF / CNPJ</label>
+						<input class="form-control" type="number" name="cpfCliente" id="cpfCliente" placeholder="xxx.xxx.xxx-xx" value="222"> 
+					</div>
+					<div class="form-group col-xs-6 col-lg-6">
+						<label for="aria-expanded" >Telefone</label>
+						<input class="form-control" type="number" name="telCliente" id="telCliente" placeholder="XX 9999-99999" value="777">
+					</div>
+					<div class="form-group col-xs-6 col-lg-6">
+						<label for="aria-expanded" >Celular</label>
+						<input class="form-control" type="number" name="celCliente" id="celCliente" placeholder="XX 99999-9999" value="555">
+					</div>
+
+					<div class="form-group col-xs-7 col-lg-7">
+						<label for="aria-expanded col-xs-12";>E-mail</label>
+						<input class="form-control col-xs-12" type="email" name="emailCliente" id="emailCliente" placeholder="nome@dominio.com.br" value="nome@email.com">
+					</div>
+					<div class="form-group col-xs-5 col-lg-5">
+						<label for="aria-expanded" >CEP</label>
+						<input class="form-control" type="number" name="cepCliente" id="cepCliente" placeholder="xxxxx-xxx"> 
+					</div>
+					<div class="form-group col-xs-6 col-lg-6">
+						<label for="aria-expanded" >Estado</label>
+						<input class="form-control" type="text" name="ufCliente" id="ufCliente" placeholder="São Paulo">
+					</div>
+					<div class="form-group col-xs-6 col-lg-6">
+						<label for="aria-expanded" >Bairro</label>
+						<input class="form-control" type="text" name="brCliente" id="brCliente" placeholder="Jardins">
+					</div>
+
+					<div class="form-group col-xs-7 col-lg-7">
+						<label for="aria-expanded col-xs-12";>Endereço</label>
+						<input class="form-control col-xs-12" type="text" name="EndCliente" id="EndCliente" placeholder="Rua das Nações">
+					</div>
+					<div class="form-group col-xs-5 col-lg-5">
+						<label for="aria-expanded" >Cidade</label>
+						<input class="form-control" type="text" name="cidCliente" id="cidCliente" placeholder="Santo André"> 
+					</div>
+
+					<button class="btn but-default btnCadastro col-xs-12 col-lg-4 col-lg-offset-4" id="btnCadastro">Cadastrar</button>
+
+			</form>
+				
+		<!-- Rodapé (Links e Copyrigth) -->
+		<footer class="page-role col-lg-12 col-xs-12 footer_div">
+			<div>
+				<img class="iconRedeSocial iconRedeSocial-face" id="btnIconeFace">
+				<img class="iconRedeSocial iconRedeSocial-google" id="btnIconeGoogle">
+				<img class="iconRedeSocial iconRedeSocial-twitter" id="btnIconeTwitter">
+				<p>&copy Copytight - 2017</p>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript" src="scripts/js/libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/js/index.js"></script>
+<script type="text/javascript" src="scripts/js/cadastroBd.js"></script>
+</html>

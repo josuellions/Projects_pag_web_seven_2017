@@ -1,0 +1,105 @@
+
+body {
+		background-color: #f6f7f8;
+	}
+
+@media (min-width: 1024px)  {
+
+	ol {
+		padding: .7% !important;
+		height: 50px;
+		/*margin-top: 0% !important;*/
+		z-index: 2;
+	}	
+		
+	h1 {
+		margin-top: -20.1% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		/*float: left;*/
+		text-align: center;
+		color: white !important;
+		/*width: 100%;*/
+		opacity: .8 !important;
+		/*z-index: 1;*/
+	}
+
+	.textNossosVal {
+		padding-top: 2%;
+		margin-top: -1%;
+		height: auto;
+	}
+
+	.textNossosVal > p {
+		padding-left: 12%;
+		padding-right: 10%;
+	}
+
+	.linkNossosVal {
+		margin-top: 2%;
+		padding-left: 12% !important;
+	}
+
+	.linkNossosVal li {
+		margin-bottom: 2%;
+	}
+
+}
+
+@media only screen and (max-width: 500px)  {
+
+	ol {
+		padding: 2% !important;
+		height: 30px;
+		/*margin-top: -4.5% !important;*/
+		z-index: 0;
+	}	
+
+	ol li a {
+		color: #337ab7 !important;	
+	}
+		
+	h1 {
+		margin-top: -40.5% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		font-size: 2rem !important;
+		text-align: center;
+		color: white !important;
+		padding: 1.5%;
+		/*width: 100%;*/
+		opacity: .8 !important;
+		/*z-index: 1;*/
+	}
+
+	.banner-01 {
+		margin-top: -5%;
+	}
+
+	.textNossosVal {
+		/*margin-top: 1.5%;*/
+		padding-top: 2%;
+		height: auto;
+	}
+
+	.textNossosVal > p {
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: justify;
+		font-size: 1.1rem;
+	}
+
+	.linkNossosVal {
+		margin-top: 2%;
+		padding-left: 2% !important;
+	}
+
+	.linkNossosVal li {
+		margin-bottom: 3%;
+	}
+
+	.linkNossosVal li a {
+		color: #337ab7 !important;
+	}
+
+}

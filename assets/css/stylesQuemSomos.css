@@ -1,0 +1,84 @@
+/**/
+body {
+		background-color: #f6f7f8;
+	}
+
+@media (min-width: 1024px)  {
+
+	ol {
+		padding: .7% !important;
+		height: 50px;
+		/*margin-top: -4.5% !important;*/
+		z-index: 2;
+	}	
+		
+	h1 {
+		margin-top: -20.1% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		/*float: left;*/
+		text-align: center;
+		color: white !important;
+		opacity: .8 !important;
+		/*z-index: 0;*/
+	}
+
+	.textoQuemSomos {
+		padding-top: 2%;
+		margin-top: -1%;
+		height: 409px;
+	}
+
+	.textoQuemSomos > p {
+		padding-left: 12%;
+		padding-right: 10%;
+	}
+
+	footer {
+		margin-top: .1%;
+	}
+}
+
+@media only screen and (max-width: 500px)  {
+
+	ol {
+		padding: 2% !important;
+		height: 30px;
+		/*margin-top: -4.5% !important;*/
+		z-index: 0;
+	}	
+
+	ol li a {
+		color: #337ab7 !important;	
+	}
+		
+	h1 {
+		margin-top: -40.5% !important;
+		margin-left: 0% !important;
+		background-color: #636363;
+		font-size: 2rem !important;
+		text-align: center;
+		color: white !important;
+		padding: 1.5%;
+		/*width: 100%;*/
+		opacity: .8 !important;
+		/*z-index: 1;*/
+	}
+
+	.banner-01 {
+		margin-top: -5%;
+	}
+
+	.textoQuemSomos {
+		padding-top: 2%;
+		margin-top: 0%;
+		height: auto;
+	}
+
+	.textoQuemSomos > p {
+		text-align: justify;
+		font-size: 1.1rem;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
