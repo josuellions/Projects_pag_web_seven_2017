@@ -138,5 +138,3 @@ $( "#btnCadastro").click( function( ){
  	onCreate( )
 
  } );
-
-

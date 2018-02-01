@@ -20,13 +20,13 @@
 		height: 45px;
 		margin-top: .2%;
 		margin-left: -.6%;
-		/*margin-bottom: 15%;*/
-		border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+		border-radius: 1.5rem;
 		background-image: url(../img/logo_seven.jpg);
 		background-size: 150px 45px;
 		background-position: -5px -.5px;
 		background-repeat: no-repeat;
-		/*border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;		*/
+		position: relative;
+		overflow: hidden;
 	}
 
 	/*MENU SUPERIOR - DIREITO*/
@@ -241,142 +241,125 @@
 	}
 
 	/*ICONE DO CAMPO VANTAGEM*/
+	.conteudo_padrao{
+		width: 1200px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.alingIconeVant ul li span {
+		font-size: 5rem;
+	}
+
 	.alingIconeVant {
-		color: white;
+/*		color: white;
 		font-size: 5rem;
 		padding: .5%;
-		/*margin-left: 15%;*/
+		margin-left: 15%;
 		display: inline-grid;
 		text-align: center;
+		margin-right: 0;*/
+		padding: 5px 0;
+		color: white;
+	}
+
+	.alingIconeVant ul{
+		list-style: none;
+		margin-top: 4px;
+		padding: 0;
+		/*overflow: hidden;*/
+	}
+
+	.alingIconeVant ul li {
+		float: left;
+		width: 20%;
+		text-align: center;
+		margin-right: 6%;
+
+	}
+
+	.alingIconeVant ul li:last-of-type{
 		margin-right: 0;
 	}
 
-/*	.alingIconeVant-iconeCompra {
-		margin-left: 0%;
-	}
-
-	.alingIconeVant-iconeGlobe {
-		margin-left: 0%;	
-	}
-
-	.alingIconeVant-iconePhone {
-		margin-left: 0%;	
-	}
-	.alingIconeVant-iconeFlash {
-		margin-left: 0%;
-		margin-right: 0;	
-	}*/
-
-	/*TEXT ICONE VANTAGEM ALING*/
-	.textVantAling {
-		float: left;
-		font-size: 1.5rem;
-		margin-top: .5%;
-		display: inline-flex;
+	.alingIconeVant ul li  h2 {
+		text-transform: uppercase;
 		text-align: center;
-		/*width: 100%;*/
-	}
-
-	/*TEXT CAMPO VANTAGEM - LOJA*/
-/*	.textLoja {
-		font-size: 1.5rem;
+		margin-bottom: 0;
+		font-size: 2rem;
 
 	}
-*/
-	.textLoja-textLoja {
-		margin-left: -.5% !important;
+
+	.alingIconeVant ul li p {
+		font-size: 1.3rem;
 	}
 
-/*	.textLoja-textGlobe {
-		padding-left: -1% !important;
-	}*/
+/*Alinhar Funcionalidades*/
 
-	.textLoja-textPhone {
-		padding-left: 2.5% !important;
+	.alingIconeFunc ul li span {
+		font-size: 5rem;
 	}
 
-	.textLoja-textFlash {
-		padding-left: 3% !important;
+	.alingIconeFunc {
+		padding: 5px 0;
+		/*color: white;*/
 	}
+
+	.alingIconeFunc ul{
+		list-style: none;
+		margin-top: 2px;
+		padding: 0;
+		/*overflow: hidden;*/
+	}
+
+	.alingIconeFunc ul li {
+		float: left;
+		width: 26%;
+		text-align: center;
+		margin-right: 10%;
+
+	}
+
+	.alingIconeFunc ul li:last-of-type{
+		margin-right: 0;
+	}
+
+	.alingIconeFunc ul li  h2 {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 0;
+		font-size: 2rem;
+
+	}
+
+	.alingIconeFunc ul li p {
+		font-size: 1.3rem;
+	}
+
+/*=========================*/
+
 
 	/*FUNDO CAMPO FUNCIONALIDADE*/
 	.campoFuncionalidades {
-		/*float: left;*/
 		padding: .5%;
-		/*width: 100%;*/
 		height: 205px;
-		/*margin-top:-1%;  */
 		background-color: #f1f1f1;
 	}
 
 	.tituloFuncionalidades {
-		text-align: center !important;
-		/*margin-top: -.1%;*/
+		text-align: center;
+		margin-top: .5%;
 	}
 	
 	/*TEXTO DO CAMPO FUNCIONALIDADES*/
 	.textFuncionalidades {
-		text-align: center !important;
-		/*margin-top: 1%;*/
-	}
-
-	/*ICONE DO CAMPO FUNCIONALIDADE*/
-	.alingIconeFunc {
-		font-size: 5rem;
-		padding: .5%;
 		text-align: center;
-		/*margin-left: 16%;*/
-		/*width: 70%;*/
-		display: inline-grid;
-		text-align: center;
-		margin-right: 0;
 	}
 
-	.alingIconeVant-iconeQuestion {
-		/*margin-left: 10%;*/
-	}
-
-/*	.alingIconeVant-iconeUser {
-		margin-left: 28.2%;	
-	}
-
-	.alingIconeVant-iconeCalendar {
-		margin-left: 31%;	
-	}*/
-
-
-		/*TEXT ICONE FUNCIONALIDADES ALING*/
-	.textFuncAling {
-		float: left;
-		margin-top: .5%;
-		font-size: 1.5rem;
-		display: inline-grid;
-		text-align: center;
-		/*width: 100%;*/
-	}
-
-	/*TEXT CAMPO FUNCIONALIDADES - LOJA*/
-/*	.textVantQuestion {
-		font-size: 1.5rem;
-	}*/
-
-
-	.textVantQuestion-textQuestion {
-		margin-left: -.5% !important;
-	}
-
-	.textVantQuestion-textUser {
-		padding-left: 2% !important;
-	}
-
-	.textVantQuestion-textCalendar {
-		padding-left: 3% !important;
-	}
 
 	/*CAMPO CADASTRO*/
 	.campoCadastro {
-		/*float: left;*/
-		/*width: 100%;*/
+		margin-top: 0;
 		height: 85px;
 		opacity: .70;
 		background-color: black;
@@ -387,24 +370,18 @@
 	/*TITULO DO CAMPO CADASTRO*/
 	.tituloCadastro {
 		margin-top: 1%;
-		/*margin-left: 15%;*/
 		color: white;
 	}
 
 	/*TEXTO DO CAMPO CADASTRO*/
 	.textCadastro {
-		/*float: left;*/
-		/*margin-left: 15%;*/
 		color: white;
 	}
 
 	/*BOTÃO CADASTRO*/
 	.btnCadastro {
-		/*float: right;*/
 		margin-top: -3.1%;
-		/*margin-right: 5% !important;*/
 		color: white !important;
-		/*width: 10%;*/
 		background-color: black !important;
 		opacity: .90;
 
